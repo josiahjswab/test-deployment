@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.eot");
+  src: local("Barlow Condensed Regular"), local("BarlowCondensed-Regular"),
+    url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+      url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.woff2")
+      format("woff2"),
+      url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.woff")
+      format("woff"),
+      url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.ttf")
+      format("truetype"),
+      url("../fonts/barlow-condensed-v4-latin/barlow-condensed-v4-latin-regular.svg#BarlowCondensed")
+      format("svg");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.eot");
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.woff2")
+      format("woff2"),
+    url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.woff")
+      format("woff"),
+    url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.ttf")
+      format("truetype"),
+    url("../fonts/pt-sans-v11-latin/pt-sans-v11-latin-regular.svg#PTSans")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Antic Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.eot");
+  src: local("Antic Slab Regular"), local("AnticSlab-Regular"),
+    url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.woff2")
+      format("woff2"),
+    url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.woff")
+      format("woff"),
+    url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.ttf")
+      format("truetype"),
+    url("../fonts/antic-slab-v8-latin/antic-slab-v8-latin-regular.svg#AnticSlab")
+      format("svg");
+}
+
+$barlow: "Barlow Condensed", "Arial Narrow", sans-serif;
+$pt-sans: "PT Sans";
+$antic: "Antic Slab";

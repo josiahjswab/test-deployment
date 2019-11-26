@@ -1,0 +1,118 @@
+.header {
+  .header-navbar-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+    width: 100vw;
+    border-bottom: 1px solid grey;
+    background: $theme-color-primary;
+    box-shadow: 0 0 5px 0 $theme-font-color;
+    z-index: 2;
+    .header-logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-left: 65px;
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+    .header-navbar {
+      display: flex;
+      justify-content: center;
+      margin-right: 65px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        li {
+          margin: 0px 10px;
+          list-style: none;
+          text-transform: uppercase;
+          font-family: $barlow;
+          font-size: larger;
+          a {
+            text-decoration: none;
+            color: $theme-font-color;
+            &:hover {
+              color: $theme-color-contrast;
+            }
+            &:active {
+              color: lighten($theme-color-contrast, 20%)
+            }
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 0;
+    margin:  68px 0 0 0;
+    max-height: 500px;
+    transform: translate3d(0, -100%, 0);
+    transition: transform 0.5s ease;
+    z-index: 1;
+    width: 100vw;
+    background: $theme-color-primary;
+    text-align: center;
+    .menu-item {
+      font-family: $barlow;
+      font-size: xx-large;
+      list-style: none;
+      margin: 10px 0;
+      padding-bottom: 5px;
+      box-shadow: 0 2px 2px -2px grey;
+      a {
+        text-decoration: none;
+        color: $theme-font-color;
+        &:active {
+          color: $theme-color-contrast
+        }
+      }
+    }
+  }
+  .header-hamburger {
+    display: none;
+    width: 100%;
+    margin-top: 68px;
+    .header-hamburger-icon {
+      position: absolute;
+      right: 3%;
+      top: 32px;
+      transform: translate(0, -50%);
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      div {
+        border-bottom: 5px solid $theme-font-color;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header {
+    .header-navbar-container {
+      .header-logo {
+        margin-left: 3%;
+      }
+      .header-navbar {
+        display: none;
+      }
+      .header-hamburger {
+        display: inline
+      }
+    }
+    .menu {
+      display: inline;
+    }
+  }
+}
