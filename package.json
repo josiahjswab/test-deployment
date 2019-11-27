@@ -20,7 +20,8 @@
     "build-client": "cross-env BABEL_ENV=client parcel build app/index.html -d dist/client --public-url /dist",
     "build-server": "cross-env BABEL_ENV=server parcel build server/index.js -d dist/server --public-url /dist --target=node6",
     "generate-imported-component": "imported-components app app/imported.js",
-    "start": "node dist/server"
+    "start": "node dist/server",
+    "heroku-postbuild": "rimraf dist && npm run build-client && npm run build-server"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
