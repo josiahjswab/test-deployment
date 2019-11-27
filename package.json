@@ -3,6 +3,9 @@
   "version": "0.4.0",
   "description": "Example of SSR with React and ParcelJS",
   "main": "index.js",
+  "engines": {
+    "node": "12.13.0"
+  },
   "keywords": [
     "parcel",
     "react",
